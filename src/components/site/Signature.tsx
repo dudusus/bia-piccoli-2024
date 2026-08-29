@@ -17,10 +17,10 @@ export function Signature({
     xl: "text-6xl sm:text-8xl",
   }[size];
   const num = {
-    sm: "text-2xl",
-    md: "text-5xl sm:text-6xl",
-    lg: "text-7xl sm:text-8xl",
-    xl: "text-8xl sm:text-[10rem]",
+    sm: "text-3xl",
+    md: "text-6xl sm:text-7xl",
+    lg: "text-8xl sm:text-9xl",
+    xl: "text-9xl sm:text-[12rem]",
   }[size];
   const role = {
     sm: "text-[0.55rem]",
