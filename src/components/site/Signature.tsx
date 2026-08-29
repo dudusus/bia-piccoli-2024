@@ -42,7 +42,7 @@ export function Signature({
       </div>
       <span className={`h-[1.6em] w-px shrink-0 ${barColor}`} aria-hidden="true" />
       <div className="shrink-0 text-center">
-        <p className={`font-display leading-[0.8] ${num} ${numColor}`}>{CANDIDATE.number}</p>
+        <p className={`font-display font-bold leading-[0.75] tracking-[-0.04em] ${num} ${numColor}`}>{CANDIDATE.number}</p>
         <p className={`mt-1 font-bold tracking-[0.2em] ${role} ${roleColor}`}>PP</p>
       </div>
     </div>
