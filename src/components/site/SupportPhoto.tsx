@@ -89,20 +89,20 @@ function drawComposition(
 
   ctx.fillStyle = "#2f80ff";
   ctx.font = `${168 * u}px "Bebas Neue", Impact, sans-serif`;
-  ctx.fillText(CANDIDATE.number, cx, 972 * u);
+  ctx.fillText(CANDIDATE.number, cx, 958 * u);
 
   ctx.fillStyle = "rgba(255,255,255,0.9)";
   ctx.font = `700 ${26 * u}px Montserrat, sans-serif`;
-  ctx.fillText(CANDIDATE.role, cx, 1012 * u);
+  ctx.fillText(CANDIDATE.role, cx, 1005 * u);
 
   ctx.fillStyle = "rgba(255,255,255,0.7)";
   ctx.font = `700 ${22 * u}px Montserrat, sans-serif`;
-  ctx.fillText("PP — PARTIDO PROGRESSISTA", cx, 1048 * u);
+  ctx.fillText("PP — PARTIDO PROGRESSISTA", cx, 1044 * u);
 
   // Traços laterais
   ctx.fillStyle = "#1769f5";
-  ctx.fillRect(90 * u, 862 * u, 150 * u, 6 * u);
-  ctx.fillRect(size - 240 * u, 862 * u, 150 * u, 6 * u);
+  ctx.fillRect(90 * u, 900 * u, 150 * u, 6 * u);
+  ctx.fillRect(size - 240 * u, 900 * u, 150 * u, 6 * u);
 }
 
 export function SupportPhoto() {
