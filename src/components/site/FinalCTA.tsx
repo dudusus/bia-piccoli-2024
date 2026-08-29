@@ -10,7 +10,7 @@ export function FinalCTA() {
           <br />
           <span className="text-blue-light">CHEGAR MAIS LONGE!</span>
         </h2>
-        <p className="mt-6 font-display text-6xl leading-none sm:text-8xl">{CANDIDATE.number}</p>
+        <p className="mt-6 font-display text-7xl font-bold leading-[0.75] tracking-[-0.04em] sm:text-9xl">{CANDIDATE.number}</p>
         <p className="mt-2 text-xs font-extrabold tracking-[0.35em] text-white/80">
           {CANDIDATE.name} · {CANDIDATE.role}
         </p>

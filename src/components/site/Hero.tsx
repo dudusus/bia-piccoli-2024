@@ -23,7 +23,7 @@ export function Hero() {
               <br />
               PICCOLI
             </h1>
-            <p className="font-display text-7xl leading-[0.8] text-blue-light sm:text-8xl lg:text-9xl">
+            <p className="font-display text-8xl font-bold leading-[0.75] tracking-[-0.04em] text-blue-light sm:text-9xl lg:text-[10rem]">
               {CANDIDATE.number}
             </p>
           </div>

@@ -17,10 +17,10 @@ export function Signature({
     xl: "text-6xl sm:text-8xl",
   }[size];
   const num = {
-    sm: "text-2xl",
-    md: "text-5xl sm:text-6xl",
-    lg: "text-7xl sm:text-8xl",
-    xl: "text-8xl sm:text-[10rem]",
+    sm: "text-3xl",
+    md: "text-6xl sm:text-7xl",
+    lg: "text-8xl sm:text-9xl",
+    xl: "text-9xl sm:text-[12rem]",
   }[size];
   const role = {
     sm: "text-[0.55rem]",
@@ -42,7 +42,7 @@ export function Signature({
       </div>
       <span className={`h-[1.6em] w-px shrink-0 ${barColor}`} aria-hidden="true" />
       <div className="shrink-0 text-center">
-        <p className={`font-display leading-[0.8] ${num} ${numColor}`}>{CANDIDATE.number}</p>
+        <p className={`font-display font-bold leading-[0.75] tracking-[-0.04em] ${num} ${numColor}`}>{CANDIDATE.number}</p>
         <p className={`mt-1 font-bold tracking-[0.2em] ${role} ${roleColor}`}>PP</p>
       </div>
     </div>
