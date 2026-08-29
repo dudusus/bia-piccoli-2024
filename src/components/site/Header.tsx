@@ -115,6 +115,16 @@ export function Header() {
           >
             📲 QUERO RECEBER MATERIAL
           </a>
+          <a
+            href={CANDIDATE.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="mt-3 flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-4 text-center text-sm font-extrabold tracking-widest text-white"
+          >
+            <InstagramIcon className="h-5 w-5" />
+            SEGUIR NO INSTAGRAM
+          </a>
         </nav>
       </div>
     </header>
