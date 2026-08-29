@@ -32,7 +32,7 @@ export function Header() {
             {CANDIDATE.name}
           </span>
           <span className="h-6 w-px bg-white/25" aria-hidden="true" />
-          <span className="font-display text-2xl leading-none text-blue-light sm:text-3xl">
+          <span className="font-display text-2xl font-bold leading-none tracking-[-0.03em] text-blue-light sm:text-3xl">
             {CANDIDATE.number}
           </span>
         </a>

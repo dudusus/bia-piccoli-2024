@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr]">
           <div>
             <p className="font-display text-5xl leading-none sm:text-6xl">{CANDIDATE.name}</p>
-            <p className="mt-3 font-display text-6xl leading-none text-blue-light sm:text-7xl">
+            <p className="mt-3 font-display text-7xl font-bold leading-[0.75] tracking-[-0.04em] text-blue-light sm:text-8xl">
               {CANDIDATE.number}
             </p>
             <p className="mt-3 text-xs font-extrabold tracking-[0.3em] text-white/85">
