@@ -61,6 +61,15 @@ export function Header() {
           >
             📲 MATERIAL
           </a>
+          <a
+            href={CANDIDATE.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Instagram ${CANDIDATE.instagramHandle}`}
+            className="rounded-full border border-white/25 p-2.5 text-white transition-colors hover:border-white/50 hover:text-blue-light"
+          >
+            <InstagramIcon />
+          </a>
         </nav>
 
         <button
