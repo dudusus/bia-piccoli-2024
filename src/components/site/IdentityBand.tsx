@@ -11,7 +11,7 @@ export function IdentityBand() {
             {CANDIDATE.role} · {CANDIDATE.party}
           </p>
         </div>
-        <p className="font-display text-7xl leading-none sm:text-8xl">{CANDIDATE.number}</p>
+        <p className="font-display text-8xl font-bold leading-[0.75] tracking-[-0.04em] sm:text-9xl">{CANDIDATE.number}</p>
       </Reveal>
     </section>
   );
