@@ -1,24 +1,70 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { IdentityBand } from "@/components/site/IdentityBand";
+import { History } from "@/components/site/History";
+import { Achievements } from "@/components/site/Achievements";
+import { Highlight1998 } from "@/components/site/Highlight1998";
+import { Proposals } from "@/components/site/Proposals";
+import { Participation } from "@/components/site/Participation";
+import { MaterialCTA } from "@/components/site/MaterialCTA";
+import { SupportPhoto } from "@/components/site/SupportPhoto";
+import { FinalCTA } from "@/components/site/FinalCTA";
+import { Footer } from "@/components/site/Footer";
+import { CANDIDATE } from "@/lib/campaign";
+
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Bia Piccoli | 11 311 | Deputada Estadual" },
+      {
+        name: "description",
+        content: "Conheça a história, a trajetória e as propostas de Bia Piccoli.",
+      },
+      { property: "og:title", content: "Bia Piccoli | 11 311 | Deputada Estadual" },
+      {
+        property: "og:description",
+        content: "Conheça a história, a trajetória e as propostas de Bia Piccoli.",
+      },
+      { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Bia Piccoli",
+          jobTitle: "Candidata a Deputada Estadual",
+          affiliation: { "@type": "Organization", name: "PP — Partido Progressista" },
+          description: `${CANDIDATE.name} — ${CANDIDATE.role} ${CANDIDATE.number}. ${CANDIDATE.slogan}`,
+        }),
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main>
+        <Hero />
+        <IdentityBand />
+        <History />
+        <Achievements />
+        <Highlight1998 />
+        <Proposals />
+        <Participation />
+        <MaterialCTA />
+        <SupportPhoto />
+        <FinalCTA />
+      </main>
+      <Footer />
     </div>
   );
 }
