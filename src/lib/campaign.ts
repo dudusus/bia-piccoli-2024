@@ -6,6 +6,8 @@ export const CANDIDATE = {
   cnpj: "68.404.016/0001-01",
   phoneLabel: "51 99977-3654",
   slogan: "Juntos, podemos chegar mais longe!",
+  instagram: "https://instagram.com/piccolibia",
+  instagramHandle: "@piccolibia",
 } as const;
 
 export const WHATSAPP_MESSAGE = "Olá! Gostaria de receber materiais da Bia Piccoli.";
