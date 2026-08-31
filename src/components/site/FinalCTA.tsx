@@ -20,7 +20,7 @@ export function FinalCTA() {
             href="#minha-historia"
             className="rounded-xl bg-white px-5 py-4 text-sm font-extrabold tracking-wide text-navy transition-transform hover:scale-[1.02]"
           >
-            📖 CONHEÇA MINHA HISTÓRIA
+            📖 O QUE JÁ FIZ
           </a>
           <a
             href="#propostas"
