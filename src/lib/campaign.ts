@@ -8,6 +8,8 @@ export const CANDIDATE = {
   slogan: "Juntos, podemos chegar mais longe!",
   instagram: "https://instagram.com/piccolibia",
   instagramHandle: "@piccolibia",
+  facebook: "https://facebook.com/beatrizpiccoli",
+  facebookHandle: "@beatrizpiccoli",
 } as const;
 
 export const WHATSAPP_MESSAGE = "Olá! Gostaria de receber materiais da Bia Piccoli.";
