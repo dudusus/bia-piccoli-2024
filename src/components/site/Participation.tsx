@@ -50,7 +50,7 @@ export function Participation() {
           </p>
         </Reveal>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           <Reveal delay={60}>
             <a
               href={WHATSAPP_LINK}
@@ -77,6 +77,18 @@ export function Participation() {
               <InstagramIcon />
               <span className="mt-5 font-display text-3xl leading-none">SEGUIR NO INSTAGRAM</span>
               <span className="mt-2 font-soft text-sm text-white/90">{CANDIDATE.instagramHandle}</span>
+            </a>
+          </Reveal>
+          <Reveal delay={150}>
+            <a
+              href={CANDIDATE.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col justify-between rounded-2xl bg-facebook p-7 text-white transition-transform hover:-translate-y-1"
+            >
+              <FacebookIcon />
+              <span className="mt-5 font-display text-3xl leading-none">SEGUIR NO FACEBOOK</span>
+              <span className="mt-2 font-soft text-sm text-white/90">{CANDIDATE.facebookHandle}</span>
             </a>
           </Reveal>
           <Reveal delay={180}>
